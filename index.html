@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kalayaan: Filipina Heroines of World War II</title>
+<meta name="description" content="Kalayaan is a picture book of true stories about Filipina heroines of World War II, written by Kathryn Serrano and illustrated by Casielle Santos-Gaerlan. Order a copy or book a reading.">
+<meta property="og:title" content="Kalayaan: Filipina Heroines of World War II">
+<meta property="og:description" content="True stories of Filipina heroines, written so children can find strength in their ancestors.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="cover.jpg">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Josefin+Sans:wght@500;600&family=Big+Shoulders+Display:wght@600;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:14px}
+img{max-width:100%}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<style>
+/* Light-only by choice, to match the printed book. Layout: a coral hero that runs straight into the cover art, then a calm reading column; roll call of heroines as a typographic list */
+:root{
+  --paper:#ffffff; --surface:#fdf3f2; --ink:#18161a; --muted:#5a5258;
+  --coral:#fe4f5c; --coral-deep:#d81e2f; --sun:#f2b829; --teal:#14907a; --line:#ecdcdb;
+  --on-coral:#ffffff; --title-filter:none;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --brush:"Permanent Marker","Big Shoulders Display",Impact,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.075rem;line-height:1.6}
+.wrap{max-width:1400px;margin:0 auto;padding-left:max(16px,4vw,env(safe-area-inset-left,0px));padding-right:max(16px,4vw,env(safe-area-inset-right,0px))}
+@media (min-width:1500px){ body{font-size:1.15rem} }
+a{color:var(--coral-deep)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:.95;margin:0;letter-spacing:.01em}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-deep)}
+.hero .eyebrow{color:var(--coral-deep)}
+
+/* Hero */
+.hero{color:var(--ink);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;max-width:none;padding:0;align-items:stretch}
+.hero .copy{background:var(--paper);padding:clamp(40px,6vw,96px) max(16px,5vw);display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hero .copy > *{max-width:600px;width:100%}
+.hero h1{font-family:var(--brush);font-weight:400;font-size:clamp(3.6rem,9vw,6.5rem);text-transform:uppercase;color:var(--on-coral);margin-top:14px;line-height:1}
+.hero .sub{font-family:"Josefin Sans","Big Shoulders Display",sans-serif;font-weight:600;font-size:clamp(1.5rem,3.6vw,2.3rem);color:var(--on-coral);margin-top:8px;text-transform:uppercase;letter-spacing:.03em}
+.hero h1 .wordmark{filter:var(--title-filter);display:block;width:100%;max-width:clamp(300px,30vw,520px);height:auto}
+.hero .subtitle-img{filter:var(--title-filter);display:block;width:100%;max-width:clamp(280px,27vw,470px);height:auto}
+.hero p.lede{font-size:1.2rem;margin:22px 0 0}
+.hero p.care{font-size:1rem;margin:16px 0 0;padding-left:14px;border-left:3px solid var(--coral);color:var(--muted)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;padding:14px 24px;text-decoration:none;border:2px solid var(--ink);transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--coral);border-color:var(--coral);color:#ffffff}
+.btn.ghost{color:var(--ink);border-color:var(--ink)}
+.specs{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-deep);margin-top:6px}
+.bulk{margin:24px 0 0;font-size:1.05rem}
+@media (max-width:980px){ .hero .price{white-space:normal} }
+.price{font-family:var(--body);font-size:.92rem;white-space:nowrap;color:var(--muted);margin-top:14px}
+.cover{background:var(--coral);display:flex;align-items:center;justify-content:center;padding:clamp(40px,6vw,96px) max(16px,5vw)}
+.cover img{max-width:min(100%,clamp(340px,34vw,620px))}
+.cover img{display:block;width:100%;height:auto;box-shadow:0 18px 40px rgba(60,0,10,.35),0 2px 6px rgba(60,0,10,.25)}
+
+.press{border-bottom:1px solid var(--line)}
+.press .wrap{padding-block:22px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 32px}
+.press-label{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-deep)}
+.press ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 32px}
+.press li{font-family:var(--display);font-weight:800;font-size:1.4rem;text-transform:uppercase;letter-spacing:.02em;color:var(--muted)}
+.press li a{color:inherit;text-decoration:none;border-bottom:2px solid transparent}
+.press li a:hover{color:var(--ink);border-bottom-color:var(--coral)}
+.review{background:var(--surface);border-bottom:1px solid var(--line)}
+.review .wrap{padding-block:40px}
+.review figure{margin:0 auto;max-width:760px;text-align:center}
+.review blockquote{font-family:var(--body);font-style:italic;font-weight:400;text-transform:none;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.5;color:var(--ink);max-width:none;margin:0}
+.review-title{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.4rem,3vw,2rem);line-height:1.05;color:var(--ink);margin-bottom:14px;text-wrap:balance}
+.review figcaption a{color:inherit}
+.review figcaption{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-deep);margin-top:14px}
+section{padding-block:64px}
+section + section{border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px}
+.two h2{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;text-transform:uppercase}
+.prose{max-width:62ch}
+.prose p{margin:0 0 1em}
+.prose p:last-child{margin-bottom:0}
+
+/* Roll call */
+.roll{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
+.roll li{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);text-transform:uppercase;padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline}
+.roll li::before{content:"";width:10px;height:10px;flex:none;background:var(--coral);transform:rotate(45deg) translateY(-3px)}
+.roll .aka{font-family:var(--body);font-weight:400;font-style:italic;text-transform:none;font-size:1rem;color:var(--muted)}
+.roll li{display:grid;grid-template-columns:10px minmax(0,1fr);column-gap:14px;align-items:baseline}
+.roll li .aka{grid-column:2}
+.roll li.you{color:var(--coral-deep)}
+.roll li.you::before{background:var(--ink)}
+.frame{display:flex;gap:24px;align-items:center;margin-top:32px;padding:24px;background:var(--surface);border:1px solid var(--line);flex-wrap:wrap}
+.frame-box{width:120px;aspect-ratio:3/4;flex:none;border:3px dashed var(--coral-deep);display:grid;place-items:center;text-align:center;padding:8px}
+.frame-box span{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--coral-deep)}
+.frame p{margin:0;max-width:52ch;flex:1 1 240px;min-width:0;font-size:1.1rem}
+.oneword{font-size:1.15rem;margin:32px 0 0}
+.oneword strong{color:var(--coral-deep)}
+.note{font-size:.95rem;color:var(--muted);margin:12px 0 0}
+
+blockquote{margin:0;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,6vw,4rem);line-height:1;color:var(--coral-deep);max-width:18ch}
+blockquote cite{display:block;font-family:var(--mono);font-style:normal;font-size:.85rem;letter-spacing:.12em;color:var(--muted);margin-top:18px;font-weight:500}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}
+.card{background:var(--surface);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:8px}
+.card h3{font-size:1.6rem;font-weight:800;text-transform:uppercase}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card a{margin-top:auto;font-family:var(--mono);font-size:.85rem}
+
+.libs{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:0}
+.libs li{display:flex;flex-direction:column;gap:2px;padding:14px 0;border-bottom:1px solid var(--line)}
+.libs li strong{font-family:var(--display);font-weight:800;font-size:1.5rem;text-transform:uppercase;line-height:1.05}
+.libs li span{color:var(--muted);font-size:.98rem}
+h3.ask{font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:800;text-transform:uppercase;margin:0 0 14px}
+.request{background:var(--surface);border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.request pre{margin:0;font-family:var(--mono);font-size:.85rem;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ink)}
+.btn.copy{background:var(--coral);border-color:var(--coral);color:#ffffff;cursor:pointer;font-size:1rem;padding:10px 18px}
+.booking{margin-top:40px;padding:28px;background:var(--surface);border:1px solid var(--line)}
+.booking > p{margin:0 0 20px;color:var(--muted)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px}
+.fields label{display:flex;flex-direction:column;gap:6px;font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);min-width:0}
+.fields label.wide{grid-column:1/-1}
+.fields input,.fields select,.fields textarea{font:inherit;font-family:var(--body);font-size:1rem;letter-spacing:0;text-transform:none;padding:10px 12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:0;width:100%;box-sizing:border-box}
+.fields input:focus,.fields select:focus,.fields textarea:focus{outline:2px solid var(--coral);outline-offset:0;border-color:var(--coral)}
+#booking-form .btn{margin-top:20px;cursor:pointer}
+.form-error{color:var(--coral-deep);margin:14px 0 0}
+.fallback{margin-top:20px}
+.fallback pre{font-family:var(--mono);font-size:.85rem;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--paper);border:1px solid var(--line);padding:16px;margin:12px 0}
+.fb-actions{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:760px){ .fields{grid-template-columns:1fr} .booking{padding:20px} }
+.peek-h{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;text-transform:uppercase;margin:12px 0 28px}
+.spreads{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;max-width:900px}
+.spreads figure{margin:0;background:#e3e3e4;display:flex;flex-direction:column}
+.spreads img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:contain}
+.spreads figcaption{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:12px 14px;background:var(--surface)}
+@media (max-width:760px){ .spreads{grid-template-columns:1fr} }
+.events{margin-top:48px}
+.event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:8px}
+.event-grid figure{margin:0;background:var(--surface);border:1px solid var(--line)}
+.event-grid img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.event-grid figcaption{display:flex;flex-direction:column;gap:2px;padding:12px 14px}
+.event-grid figcaption strong{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.15rem;line-height:1.1}
+.event-grid figcaption span{font-size:.92rem;color:var(--muted)}
+@media (max-width:760px){ .event-grid{grid-template-columns:1fr} }
+.band{background:var(--coral);color:#ffffff}
+.band .wrap{padding-block:56px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.band h2{font-size:clamp(2rem,4.4vw,3rem);font-weight:900;text-transform:uppercase;max-width:24ch}
+.band .btn{background:#18161a;border-color:#18161a;color:#ffffff}
+.band .price-note{font-family:var(--body);font-size:1rem;margin:10px 0 0}
+
+footer{padding-block:32px;}
+footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+
+@media (max-width:760px){
+  .two{grid-template-columns:1fr;gap:28px}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero .copy{padding-bottom:0}
+  .press ul{gap:6px 18px}
+  .press li{font-size:1.05rem}
+  .cover{padding:32px 16px}
+  .cover img{max-width:360px}
+  .roll{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+}
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow">A picture book from Mahal Publishing</div>
+      <h1><img src="title.png" alt="Kalayaan" class="wordmark"></h1>
+      <div class="sub"><img src="subtitle.png" alt="Filipina Heroines of World War II" class="subtitle-img"></div>
+      <p class="lede">The true stories of Filipina women whose courage helped their country through World War II, written so children can find strength in their ancestors.</p>
+      <p class="care">Written with young readers in mind, the book lifts up these women's courage without casting blame on Japanese people or culture. Kids are impressionable, so the focus stays on bravery, not on teaching who to hate.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://www.paypal.com/ncp/payment/BKGCK6P66KVYN" target="_blank" rel="noopener">Get the book</a>
+        <a class="btn ghost" href="#book">Bring it to your school</a>
+      </div>
+      <div class="price">$21.99 · Written by Kathryn Serrano · Illustrated by Casielle Santos-Gaerlan</div>
+      <div class="specs">Hardcover · 28 pages · Read-aloud for little ones · Ages 8+ on their own</div>
+    </div>
+    <div class="cover"><img src="cover.jpg" alt="Cover of Kalayaan: illustrated portraits of eight Filipina heroines on a coral background" width="840" height="844"></div>
+  </div>
+</header>
+
+<div class="press">
+  <div class="wrap">
+    <span class="press-label">As featured on</span>
+    <ul>
+      <li><a href="https://pix11.com/video/childrens-book-kalayaan-shares-stories-of-flipina-heroines/8659236/" target="_blank" rel="noopener">PIX11 News</a></li>
+      <li>Sway's Universe</li>
+      <li><a href="https://www.positivelyfilipino.com/magazine/empowering-through-history-and-healing" target="_blank" rel="noopener">Positively Filipino</a></li>
+      <li><a href="https://music.youtube.com/playlist?list=PLyXKggcn-Tx_ynv7pHqm6_4som15tMcOA" target="_blank" rel="noopener">Cultural Kultivators</a></li>
+      <li><a href="https://usa.inquirer.net/133308/childrens-book-tells-stories-of-filipina-fighters-in-wwii" target="_blank" rel="noopener">Inquirer USA</a></li>
+      <li><a href="https://www.northjersey.com/story/entertainment/books/2023/06/06/female-filipino-wartime-resistance-fighters-get-their-due-in-new-book/70276692007/" target="_blank" rel="noopener">NorthJersey.com</a></li>
+    </ul>
+  </div>
+</div>
+<div class="review">
+  <div class="wrap">
+    <figure>
+      <div class="review-title">“Perfect book to learn about Filipino history”</div>
+      <blockquote>“As a Filipina American, I didn't grow up learning about my cultural history. When I became a mom, I knew I needed my daughter to learn about her roots and this is the perfect book. She's fascinated by the strong, fierce Filipina women and their accomplishments… I wish I had this book growing up!”</blockquote>
+      <figcaption>A parent, reviewing <em>Kalayaan</em> on <a href="https://www.amazon.com/portal/customer-reviews/srp/-/R1VT5FJSUF78TG/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8" target="_blank" rel="noopener">Amazon</a></figcaption>
+    </figure>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="wrap two">
+      <div><div class="eyebrow">About the book</div><h2 style="margin-top:12px">Kalayaan means freedom</h2></div>
+      <div class="prose">
+        <p>History books rarely name them, yet Filipina women were at the heart of their country's fight for freedom during World War II. A teacher, a scientist, a journalist and an actor all used their courage, cleverness and kindness to protect their communities and help people in need.</p>
+        <p><em>Kalayaan</em> brings these overlooked women to young readers through vivid illustrated profiles. Each one shows ordinary people becoming leaders in the fight for freedom and justice, and helps Filipino and Filipino American kids see themselves in the women who came before them.</p>
+        <p>It's a book for classrooms, libraries and family bookshelves, and for any reader who has ever wondered where their courage comes from.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="peek">
+    <div class="wrap">
+      <div class="eyebrow">A peek inside</div>
+      <h2 class="peek-h">Every heroine tells her own story</h2>
+      <div class="spreads">
+        <figure><img src="spread-orosa.jpg" alt="Inside spread: María Orosa, chemist and innovator, in her lab" loading="lazy"><figcaption>María Orosa, chemist and innovator</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Inside the book</div>
+      <h2 style="font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;text-transform:uppercase;margin:12px 0 28px">The heroines</h2>
+      <ul class="roll">
+        <li>María Orosa</li>
+        <li>Josefa Llanes Escoda</li>
+        <li>Nieves Fernández</li>
+        <li>Yay Panlilio</li>
+        <li>Januaria Constantino Keller</li>
+        <li>Josefina Guerrero</li>
+        <li>Magdalena Leones</li>
+        <li>Simeona Punsalan-Tapang</li>
+        <li>Remedios Gómez-Paraiso <span class="aka">Kumander Liwayway</span></li>
+        <li class="you">And the tenth heroine: you, the reader</li>
+      </ul>
+      <p class="oneword"><strong>Each heroine is given one word that captures her spirit.</strong> Open the book to discover them all.</p>
+      <p class="note">Teacher, scientist, journalist, actor: their stories are as different as the islands they came from.</p>
+      <div class="frame">
+        <div class="frame-box" aria-hidden="true"><span>Your portrait here</span></div>
+        <p><strong>The last page is waiting for you.</strong> It holds an empty portrait frame where each reader draws themselves and writes their own story, adding a new page to the same book that holds the women who came before them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two">
+      <div>
+        <blockquote>“Find strength in our ancestors.”<cite>Kathryn Serrano, author</cite></blockquote>
+      </div>
+      <div class="prose">
+        <div class="eyebrow">About the author</div>
+        <p style="margin-top:12px"><strong>Kathryn Serrano</strong> is a Filipino American author, independent publisher and storyteller from New Jersey. She founded Mahal Publishing to share stories that deserve to be told, from communities that rarely see themselves on the page, and co-hosts the award-winning podcast <em>Future Ancestors</em>.</p>
+        <p>Writing <em>Kalayaan</em> began as research into the women of the resistance and became a way of reconnecting with her own heritage.</p>
+        <p><strong>Casielle Santos-Gaerlan</strong>, a Brooklyn-based artist, illustrated the heroines' portraits and stories.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bring">
+    <div class="wrap">
+      <div class="eyebrow">For schools, libraries and communities</div>
+      <h2 style="font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;text-transform:uppercase;margin-top:12px">Bring Kalayaan to your readers</h2>
+      <div class="cards">
+        <div class="card"><h3>Libraries</h3><p>Mahal Publishing is a registered Queens Public Library vendor and can supply copies for library collections.</p></div>
+        <div class="card"><h3>Readings &amp; visits</h3><p>Kathryn offers readings and talks for schools, Filipino American History Month, heritage events and conferences.</p><a href="#events">See past visits →</a></div>
+        <div class="card"><h3>Bookstores</h3><p>Find <em>Kalayaan</em> at WORD Bookstores in Jersey City and The Cranford Bookstore, or order your copy right here.</p><a href="https://thecranfordbookstore.com/products/kalayaan-filipina-heroines-of-world-war-ii" target="_blank" rel="noopener">The Cranford Bookstore →</a></div>
+      </div>
+      <div class="events" id="events">
+        <h3 class="ask">Past readings &amp; visits</h3>
+        <div class="event-grid">
+          <figure><img src="event-1.jpg" alt="Kathryn reading Kalayaan: Michelle Obama Neighborhood Library" loading="lazy"><figcaption><strong>Michelle Obama Neighborhood Library</strong><span>Long Beach, California</span></figcaption></figure>
+          <figure><img src="event-2.jpg" alt="Kathryn reading Kalayaan: Cultural Day" loading="lazy"><figcaption><strong>Cultural Day</strong><span>Secaucus, New Jersey</span></figcaption></figure>
+          <figure><img src="event-3.jpg" alt="Kathryn reading Kalayaan: Story time at Central Elementary" loading="lazy"><figcaption><strong>Story time at Central Elementary</strong><span>Larchmont, New York</span></figcaption></figure>
+          <figure><img src="event-4.jpg" alt="Kathryn reading Kalayaan: School reading" loading="lazy"><figcaption><strong>School reading</strong><span>Reading, Pennsylvania</span></figcaption></figure>
+        </div>
+      </div>
+      <div class="booking" id="book">
+        <h3 class="ask">Request a reading or visit</h3>
+        <p>Tell Kathryn a little about your event and she'll get back to you.</p>
+        <form id="booking-form" novalidate>
+          <div class="fields">
+            <label for="b-name">Your name<input id="b-name" name="name" type="text" required autocomplete="name"></label>
+            <label for="b-email">Your email<input id="b-email" name="email" type="email" required autocomplete="email"></label>
+            <label for="b-org">School or organization<input id="b-org" name="org" type="text"></label>
+            <label for="b-type">Type of event<select id="b-type" name="type"><option>School reading</option><option>Library story time</option><option>Filipino American History Month</option><option>Heritage or community event</option><option>Conference or panel</option><option>Other</option></select></label>
+            <label for="b-dates">Preferred dates<input id="b-dates" name="dates" type="text" placeholder="e.g. week of March 10"></label>
+            <label for="b-audience">Audience size and ages<input id="b-audience" name="audience" type="text" placeholder="e.g. 60 students, grades 2–4"></label>
+            <label for="b-loc" class="wide">City or location<input id="b-loc" name="location" type="text"></label>
+            <label for="b-notes" class="wide">Anything else?<textarea id="b-notes" name="notes" rows="3"></textarea></label>
+          </div>
+          <p class="form-error" id="b-error" hidden>Please add your name and a valid email so Kathryn can reply.</p>
+          <button type="submit" class="btn primary">Send request</button>
+        </form>
+        <div class="fallback" id="b-fallback" hidden>
+          <p><strong>Your email app should open with your request.</strong> If it didn't, copy the request below and email it to Kathryn.</p>
+          <pre id="b-text"></pre>
+          <div class="fb-actions"><button type="button" class="btn copy" id="b-copy">Copy the request</button><button type="button" class="btn copy" id="b-copy-email">Copy Kathryn's email</button></div>
+        </div>
+      </div>
+      <p class="bulk">Ordering 10 or more copies for a classroom, library or event? <a href="mailto:mahalpublishing@gmail.com?subject=Kalayaan%20bulk%20order">Email about bulk pricing →</a></p>
+    </div>
+  </section>
+
+  <section id="library">
+    <div class="wrap two">
+      <div>
+        <div class="eyebrow">At the library</div>
+        <h2 style="margin-top:12px">Find it on the shelf</h2>
+        <ul class="libs">
+          <li><strong>Long Beach Public Library</strong><span>Long Beach, California, including the Michelle Obama Neighborhood Library</span></li>
+          <li><strong>Filipinas Heritage Library</strong><span>Ayala Museum, Makati City, Philippines</span></li>
+        </ul>
+      </div>
+      <div class="prose">
+        <h3 class="ask">Don't see it at your library? Ask for it.</h3>
+        <p>Libraries buy books their readers request. Most have a "suggest a purchase" form on their website, or you can hand this to a librarian at the desk.</p>
+        <div class="request">
+          <pre id="request-text">Please consider adding this book to the collection:
+
+Kalayaan: Filipina Heroines of World War II
+Written by Kathryn Serrano
+Illustrated by Casielle Santos-Gaerlan
+Publisher: Mahal Publishing
+ISBN: 979-8-218-15357-1</pre>
+          <button type="button" class="btn copy" id="copy-request">Copy the request</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="band" id="order">
+  <div class="wrap">
+    <div><h2>Every child deserves to see heroes who look like them.</h2><p class="price-note">Kalayaan · $21.99</p></div>
+    <a class="btn" href="https://www.paypal.com/ncp/payment/BKGCK6P66KVYN" target="_blank" rel="noopener">Order your copy</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap"><img src="logo.png" alt="Mahal Publishing" width="72" height="53" style="width:110px;height:auto"><span>© Mahal Publishing</span></div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('copy-request'),t=document.getElementById('request-text');
+  if(!b||!t)return;
+  function selectIt(){var r=document.createRange();r.selectNodeContents(t);var sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);}
+  b.addEventListener('click',function(){
+    var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy the request'},2000)};
+    var fail=function(){selectIt();b.textContent='Selected: press Copy';setTimeout(function(){b.textContent='Copy the request'},2500)};
+    try{navigator.clipboard.writeText(t.textContent).then(done,fail)}catch(e){fail()}
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var TO='mahalpublishing@gmail.com';
+  var f=document.getElementById('booking-form'); if(!f) return;
+  var err=document.getElementById('b-error'),fb=document.getElementById('b-fallback'),pre=document.getElementById('b-text');
+  function copy(text,btn,label){
+    var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent=label},2000)};
+    var fail=function(){var r=document.createRange();r.selectNodeContents(pre);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);btn.textContent='Selected: press Copy';setTimeout(function(){btn.textContent=label},2500)};
+    try{navigator.clipboard.writeText(text).then(done,fail)}catch(e){fail()}
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(n){return (f.elements[n].value||'').trim()};
+    var ok=v('name')&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email'));
+    err.hidden=!!ok; if(!ok) return;
+    var lines=['Kalayaan reading or visit request','','Name: '+v('name'),'Email: '+v('email'),'School or organization: '+v('org'),'Type of event: '+v('type'),'Preferred dates: '+v('dates'),'Audience size and ages: '+v('audience'),'City or location: '+v('location'),'','Notes:',v('notes')];
+    var body=lines.join('\n');
+    pre.textContent=body; fb.hidden=false;
+    var subject='Kalayaan visit request: '+(v('org')||v('name'));
+    location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+  document.getElementById('b-copy').addEventListener('click',function(){copy(pre.textContent,this,'Copy the request')});
+  document.getElementById('b-copy-email').addEventListener('click',function(){copy(TO,this,"Copy Kathryn's email")});
+})();
+</script>
+</body>
+</html>
