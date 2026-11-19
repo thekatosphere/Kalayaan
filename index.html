@@ -115,10 +115,10 @@ blockquote cite{display:block;font-family:var(--mono);font-style:normal;font-siz
 .card p{margin:0;color:var(--muted);font-size:.98rem}
 .card a{margin-top:auto;font-family:var(--mono);font-size:.85rem}
 
-.libs{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:0}
-.libs li{display:flex;flex-direction:column;gap:2px;padding:14px 0;border-bottom:1px solid var(--line)}
-.libs li strong{font-family:var(--display);font-weight:800;font-size:1.5rem;text-transform:uppercase;line-height:1.05}
-.libs li span{color:var(--muted);font-size:.98rem}
+.libs{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:0}
+.libs li{display:flex;flex-direction:column;gap:1px;padding:8px 0;border-bottom:1px solid var(--line)}
+.libs li strong{font-family:var(--display);font-weight:800;font-size:1.15rem;text-transform:uppercase;line-height:1.05}
+.libs li span{color:var(--muted);font-size:.88rem}
 h3.ask{font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:800;text-transform:uppercase;margin:0 0 14px}
 .request{background:var(--surface);border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .request pre{margin:0;font-family:var(--mono);font-size:.85rem;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ink)}
@@ -162,11 +162,11 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
 @media (max-width:760px){
   .two{grid-template-columns:1fr;gap:28px}
   .hero .wrap{grid-template-columns:1fr}
-  .hero .copy{padding-bottom:0}
+  .hero .copy{padding-top:28px}
   .press ul{gap:6px 18px}
   .press li{font-size:1.05rem}
-  .cover{padding:32px 16px}
-  .cover img{max-width:360px}
+  .hero .cover{order:-1;padding:28px 16px}
+  .cover img{max-width:260px}
   .roll{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
 }
@@ -268,7 +268,7 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
       </div>
       <div class="prose">
         <div class="eyebrow">About the author</div>
-        <p style="margin-top:12px"><strong>Kathryn Serrano</strong> is a Filipino American author, independent publisher and storyteller from New Jersey. She founded Mahal Publishing to share stories that deserve to be told, from communities that rarely see themselves on the page, and co-hosts the award-winning podcast <em>Future Ancestors</em>.</p>
+        <p style="margin-top:12px"><strong>Kathryn Serrano</strong> is a Filipino American author and storyteller from New Jersey. She co-hosts the award-winning podcast <em>Future Ancestors</em>.</p>
         <p>Writing <em>Kalayaan</em> began as research into the women of the resistance and became a way of reconnecting with her own heritage.</p>
         <p><strong>Casielle Santos-Gaerlan</strong>, a Brooklyn-based artist, illustrated the heroines' portraits and stories.</p>
       </div>
@@ -280,7 +280,7 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
       <div class="eyebrow">For schools, libraries and communities</div>
       <h2 style="font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;text-transform:uppercase;margin-top:12px">Bring Kalayaan to your readers</h2>
       <div class="cards">
-        <div class="card"><h3>Libraries</h3><ul style="margin:0;padding-left:18px;color:var(--muted);font-size:.98rem;display:flex;flex-direction:column;gap:6px"><li>Michelle Obama Neighborhood Library<br>Long Beach, CA</li><li>Long Beach Public Library<br>Long Beach, CA</li><li>Filipinas Heritage Library at the Ayala Museum<br>Metro Manila, Philippines</li></ul></div>
+        <div class="card"><h3>Libraries</h3><p>In libraries from California to the Philippines and all over the world.</p><a href="#library">Find it on the shelf →</a></div>
         <div class="card"><h3>Readings &amp; visits</h3><p>Kathryn offers readings and talks for schools, Filipino American History Month, heritage events and conferences.</p><a href="#events">See past visits →</a></div>
         <div class="card"><h3>Bookstores</h3><p>Find <em>Kalayaan</em> at WORD Bookstores in Jersey City and The Cranford Bookstore, or order your copy right here.</p><a href="https://thecranfordbookstore.com/products/kalayaan-filipina-heroines-of-world-war-ii" target="_blank" rel="noopener">The Cranford Bookstore →</a></div>
       </div>
@@ -329,6 +329,7 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
           <li><strong>Michelle Obama Neighborhood Library</strong><span>Long Beach, California</span></li>
           <li><strong>Long Beach Public Library</strong><span>Long Beach, California</span></li>
           <li><strong>Filipinas Heritage Library</strong><span>Ayala Museum, Metro Manila, Philippines</span></li>
+          <li><strong>makiramdam.ph</strong><span>Pampanga, Philippines</span></li>
         </ul>
       </div>
       <div class="prose">
