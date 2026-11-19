@@ -93,8 +93,9 @@ section + section{border-top:1px solid var(--line)}
 .roll{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
 .roll li{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);text-transform:uppercase;padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline}
 .roll li::before{content:"";width:10px;height:10px;flex:none;background:var(--coral);transform:rotate(45deg) translateY(-3px)}
-.roll .aka{font-family:var(--body);font-weight:400;font-style:italic;text-transform:none;font-size:1rem;color:var(--muted)}
-.roll li{display:grid;grid-template-columns:10px minmax(0,1fr);column-gap:14px;align-items:baseline}
+.roll .aka{font-family:var(--body);font-weight:400;font-style:normal;text-transform:none;font-size:1rem;line-height:1.45;color:var(--muted);margin-top:4px}
+.roll li{display:grid;grid-template-columns:10px minmax(0,1fr);column-gap:14px;row-gap:0;align-items:start;align-content:start;line-height:1.05;padding:14px 0}
+.roll li::before{margin-top:.38em}
 .roll li .aka{grid-column:2}
 .roll li.you{color:var(--coral-deep)}
 .roll li.you::before{background:var(--ink)}
@@ -115,6 +116,8 @@ blockquote cite{display:block;font-family:var(--mono);font-style:normal;font-siz
 .card p{margin:0;color:var(--muted);font-size:.98rem}
 .card a{margin-top:auto;font-family:var(--mono);font-size:.85rem}
 
+.reviews{background:var(--surface)}
+.reviews .ctas{margin-top:22px}
 .libs{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:0}
 .libs li{display:flex;flex-direction:column;gap:1px;padding:8px 0;border-bottom:1px solid var(--line)}
 .libs li strong{font-family:var(--display);font-weight:800;font-size:1.15rem;text-transform:uppercase;line-height:1.05}
@@ -210,6 +213,7 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
       <div class="review-title">“Perfect book to learn about Filipino history”</div>
       <blockquote>“As a Filipina American, I didn't grow up learning about my cultural history. When I became a mom, I knew I needed my daughter to learn about her roots and this is the perfect book. She's fascinated by the strong, fierce Filipina women and their accomplishments… I wish I had this book growing up!”</blockquote>
       <figcaption>A parent, reviewing <em>Kalayaan</em> on <a href="https://www.amazon.com/portal/customer-reviews/srp/-/R1VT5FJSUF78TG/ref=cm_cr_arp_d_rvw_ttl?ie=UTF8" target="_blank" rel="noopener">Amazon</a></figcaption>
+      <p style="margin:18px 0 0;font-size:1rem"><a href="review.html">Read Kalayaan? Leave a review →</a></p>
     </figure>
   </div>
 </div>
@@ -241,15 +245,15 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
       <div class="eyebrow">Inside the book</div>
       <h2 style="font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;text-transform:uppercase;margin:12px 0 28px">The heroines</h2>
       <ul class="roll">
-        <li>María Orosa</li>
-        <li>Josefa Llanes Escoda</li>
-        <li>Nieves Fernández</li>
-        <li>Yay Panlilio</li>
-        <li>Januaria Constantino Keller</li>
-        <li>Josefina Guerrero</li>
-        <li>Magdalena Leones</li>
-        <li>Simeona Punsalan-Tapang</li>
-        <li>Remedios Gómez-Paraiso <span class="aka">Kumander Liwayway</span></li>
+        <li>María Orosa <span class="aka">Food scientist, chemist &amp; humanitarian</span></li>
+        <li>Josefa Llanes Escoda <span class="aka">Founder of the Girl Scouts of the Philippines</span></li>
+        <li>Nieves Fernández <span class="aka">Store owner &amp; teacher</span></li>
+        <li>Valeria “Yay” Panlilio <span class="aka">Journalist, photographer &amp; radio host</span></li>
+        <li>Januaria Constantino Keller <span class="aka">Actress</span></li>
+        <li>Josefina Guerrero <span class="aka">Peace Corps volunteer, teacher &amp; leprosy survivor</span></li>
+        <li>Magdalena Leones <span class="aka">Teacher &amp; student</span></li>
+        <li>Simeona Punsalan-Tapang <span class="aka">Organizer, National Assembly of Farmers</span></li>
+        <li>Remedios Gómez-Paraiso <span class="aka">Kumander Liwayway · Local beauty queen</span></li>
         <li class="you">And the tenth heroine: you, the reader</li>
       </ul>
       <p class="oneword"><strong>Each heroine is given one word that captures her spirit.</strong> Open the book to discover them all.</p>
@@ -257,6 +261,10 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
       <div class="frame">
         <div class="frame-box" aria-hidden="true"><span>Your portrait here</span></div>
         <p><strong>The last page is waiting for you.</strong> It holds an empty portrait frame where each reader draws themselves and writes their own story, adding a new page to the same book that holds the women who came before them.</p>
+      </div>
+      <div class="ctas" style="margin-top:28px;align-items:center">
+        <a class="btn primary" href="https://www.paypal.com/ncp/payment/BKGCK6P66KVYN" target="_blank" rel="noopener">Bring these heroines home</a>
+        <span class="price" style="margin-top:0">$21.99 + shipping · Signed edition available</span>
       </div>
     </div>
   </section>
@@ -271,6 +279,22 @@ footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:ce
         <p style="margin-top:12px"><strong>Kathryn Serrano</strong> is a Filipino American author and storyteller from New Jersey. She co-hosts the award-winning podcast <em>Future Ancestors</em>.</p>
         <p>Writing <em>Kalayaan</em> began as research into the women of the resistance and became a way of reconnecting with her own heritage.</p>
         <p><strong>Casielle Santos-Gaerlan</strong>, a Brooklyn-based artist, illustrated the heroines' portraits and stories.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap two">
+      <div>
+        <div class="eyebrow">Already read it?</div>
+        <h2 style="margin-top:12px">Loved Kalayaan? Leave a review</h2>
+      </div>
+      <div class="prose">
+        <p>Whether you found the book at a fair, a reading, a library or online, a few honest words help more families, teachers and librarians find these heroines. You don't need to have bought it on Amazon to review it there.</p>
+        <div class="ctas">
+          <a class="btn primary" href="https://www.amazon.com/s?k=9798218153571" target="_blank" rel="noopener">Review on Amazon</a>
+          <a class="btn ghost" href="review.html#share">Share a few words here</a>
+        </div>
       </div>
     </div>
   </section>
